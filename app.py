@@ -11,22 +11,22 @@ def index():
     return render_template('index.html')
 
 @app.route('/on1/')
-def on():
+def on1():
     switch_on(1)
     return render_template('index.html')
 
 @app.route('/on2/')
-def on():
+def on2():
     switch_on(2)
     return render_template('index.html')
    
 @app.route('/off1/')
-def off():
+def off1():
     switch_off(1)
     return render_template('index.html')
 
 @app.route('/off2/')
-def on():
+def off2():
     switch_off(2)
     return render_template('index.html')
 
