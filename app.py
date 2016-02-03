@@ -14,10 +14,20 @@ def index():
 def on():
     switch_on(1)
     return render_template('index.html')
+
+@app.route('/on2/')
+def on():
+    switch_on(2)
+    return render_template('index.html')
    
 @app.route('/off1/')
 def off():
     switch_off(1)
+    return render_template('index.html')
+
+@app.route('/off2/')
+def on():
+    switch_off(2)
     return render_template('index.html')
 
 if __name__ == '__main__':

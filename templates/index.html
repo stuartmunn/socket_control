@@ -1,14 +1,26 @@
 <!doctype html>
 <html>
 <head>
-<title>Living Room Lamp</title>
+<title>Socket Control</title>
 <link rel="stylesheet" href="/static/style.css" />
 <meta name="viewport" content="width=device-width, user-scalable=no" />
+<script>
+function sendRequest(action, device) {
+  var xhttp = new XMLHttpRequest();
+  // xhttp.onreadystatechange = function() {};
+  xhttp.open("GET", "/" + action + device, true);
+  xhttp.send();
+}
+</script>
 </head>
 <body>
+<div class="title" id="Title1">Living Room</div>
+<div class="on" id="On1" onclick="sendRequest('on','1')">On</div>
+<div class="off" id="Off1" onclick="sendRequest('off','1')">Off</div>
 
-<div class="on"><a href="/on1/">ON</a></div>
-<div class="off"><a href="/off1/">OFF</a></div>
+<div class="title" id="Title2">Dining Room</div>
+<div class="on" id="On2" onclick="sendRequest('on','2')">On</div>
+<div class="off" id="Off2" onclick="sendRequest('off','2')">Off</div>
 
 </body>
 </html>
