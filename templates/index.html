@@ -3,6 +3,7 @@
 <head>
 <title>Socket Control</title>
 <link rel="stylesheet" href="/static/style.css" />
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no" />
 <script>
 function sendRequest(action, device) {
@@ -14,13 +15,28 @@ function sendRequest(action, device) {
 </script>
 </head>
 <body>
-<div class="title" id="Title1">Living Room</div>
-<div class="on" id="On1" onclick="sendRequest('on','1')">On</div>
-<div class="off" id="Off1" onclick="sendRequest('off','1')">Off</div>
-
-<div class="title" id="Title2">Dining Room</div>
-<div class="on" id="On2" onclick="sendRequest('on','2')">On</div>
-<div class="off" id="Off2" onclick="sendRequest('off','2')">Off</div>
-
+<appname>Socket Control</appname>
+<div id="switch1">
+  <header>Switch One</header>
+  <onswitch onclick="sendRequest('on','1')">&nbsp;ON&nbsp;</onswitch>
+  <offswitch onclick="sendRequest('off','1')">&nbsp;OFF&nbsp;</offswitch>
+</div>
+<div id="switch2">
+  <header>Switch Two</header>
+  <onswitch onclick="sendRequest('on','2')">&nbsp;ON&nbsp;</onswitch>
+  <offswitch onclick="sendRequest('off','2')">&nbsp;OFF&nbsp;<br /></offswitch>
+</div>
+<div id="switch3">
+  <header>Switch Three</header>
+  <onswitch onclick="sendRequest('on','3')">&nbsp;ON&nbsp;</onswitch>
+  <offswitch onclick="sendRequest('off','3')">&nbsp;OFF&nbsp;</offswitch>
+</div>
+<div id="switch4">
+  <header>Switch Four</header>
+  <onswitch onclick="sendRequest('on','4')">&nbsp;ON&nbsp;</onswitch>
+  <offswitch onclick="sendRequest('off','4')">&nbsp;OFF&nbsp;</offswitch>
+</div>
+<info></info>
+<help></help>
 </body>
 </html>

@@ -1,67 +1,60 @@
 body {
-    position: absolute;
     margin: 0;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: Verdana, Georgia;
+    background: black;
+    color: white;
 }
 
 div {
-    display: block;
-    width: 48%;
-    margin: 1%;
+    display: table;
+    width: 90%;
     vertical-align: middle;
-    border-radius: 50px;
 }
 
-div.title {
-    background: gray;
-    font-size: 75px;
-    height: 18%;
+appname {
+    display: block;
+    font-size: 40px;
+    color: #000000;
+    text-shadow: 2px 2px blue;
+    text-align: center;
+    padding: 10px;
 }
 
-div.on {
-    background: black;
+header {
+    display: table-cell;
+    vertical-align: middle;
+    width: 30%;
+    padding-left: 10%;
+}
+onswitch {
+    display: table-cell;
+    font-size: 50px;
+    border: 2px black solid;
+    border-right: none;
+    background: green;
     color: white;
-    height: 38%;
-    font-size: 150px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
 }
-div.off {
-    background: white;
-    color: black;
-    height: 38%;
-    font-size: 150px;
+offswitch {
+    display: table-cell;
+    font-size: 50px;
+    border: 2px black solid;
+    border-left: none;
+    background: red;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
 }
-#Title1 {
-    position: absolute;
-    top: 0%;
-    left 0%;
+info {
 }
-#Title2 {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-}
-#On1 {
-    position: absolute;
-    top: 20%;
-    left: 0%;
-}
-#On2 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-}
-#Off1 {
-    position: absolute;
-    top: 60%;
-    left: 0%;
-}
-#Off2 {
-    position: absolute;
-    top: 60%;
-    left: 50%;
+help {
 }

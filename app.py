@@ -19,7 +19,18 @@ def on1():
 def on2():
     switch_on(2)
     return render_template('index.html')
-   
+
+@app.route('/on3/')
+def on3():
+    switch_on(3)
+    return render_template('index.html')
+
+@app.route('/on4/')
+def on4():
+    switch_on(4)
+    return render_template('index.html')
+
+
 @app.route('/off1/')
 def off1():
     switch_off(1)
@@ -28,6 +39,16 @@ def off1():
 @app.route('/off2/')
 def off2():
     switch_off(2)
+    return render_template('index.html')
+
+@app.route('/off3/')
+def off3():
+    switch_off(3)
+    return render_template('index.html')
+
+@app.route('/off4/')
+def off4():
+    switch_off(4)
     return render_template('index.html')
 
 if __name__ == '__main__':
