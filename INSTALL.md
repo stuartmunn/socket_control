@@ -1,5 +1,7 @@
 To install this application:
 
+1. Install the Energenie Pi-Mote onto the Raspberry Pi GPIO pins.
+
 2. Install python-rpi.gpio if required: 
 
    sudo apt-get install python-rpi.gpio
