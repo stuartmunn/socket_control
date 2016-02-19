@@ -30,27 +30,32 @@ header {
     width: 30%;
     padding-left: 10%;
 }
+button {
+    height: 70px;
+    width: 100%;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+button.btnon {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: green;
+}
+button.btnoff {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: red;
+}
 onswitch {
     display: table-cell;
     font-size: 50px;
-    border: 2px black solid;
-    border-right: none;
-    background: green;
-    color: white;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     text-align: center;
     vertical-align: middle;
 }
 offswitch {
     display: table-cell;
     font-size: 50px;
-    border: 2px black solid;
-    border-left: none;
-    background: red;
-    color: white;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
     text-align: center;
     vertical-align: middle;
 }
